@@ -18,8 +18,7 @@ WIN_COMBINATIONS = [
 
 
 def won?(board)
-  combination = 0
-  while combination < WIN_COMBINATIONS.length
+  WIN_COMBINATIONS.each do |combination|
     current_combination = WIN_COMBINATIONS[combination]
     xwin = current_combination.all? {|position| board[position] == "X"}
     owin = current_combination.all? {|position| board[position] == "O"}

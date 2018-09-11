@@ -24,7 +24,7 @@ def won?(board)
     xwin = current_combination.all? {|position| board[position] == "X"}
     owin = current_combination.all? {|position| board[position] == "O"}
     if xwin == true || owin == true
-      return combination
+      return current_combination
     else
       false
     end

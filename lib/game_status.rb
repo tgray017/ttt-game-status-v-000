@@ -53,7 +53,6 @@ end
 
 
 def winner(board)
-  if won?(board) == true
     combination = 0
     while combination < WIN_COMBINATIONS.length
       current_combination = WIN_COMBINATIONS[combination]

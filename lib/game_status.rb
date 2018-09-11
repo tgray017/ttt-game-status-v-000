@@ -18,9 +18,23 @@ WIN_COMBINATIONS = [
 
 
 def won?(board)
-  if board.all? {|index| index == " " || index.nil?}
-    false
-  else
+  combination = 0
+  while combination < WIN_COMBINATIONS.length
+    
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
     WIN_COMBINATIONS.each do |win_combination|
       win_index_1 = win_combination[0]
       win_index_2 = win_combination[1]

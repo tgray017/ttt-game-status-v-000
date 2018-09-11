@@ -60,8 +60,10 @@ def winner(board)
       owin = current_combination.all? {|position| board[position] == "O"}
       if xwin == true
         return "X"
-      elsif  
-
+      elsif owin == true 
+        return "O"
+      else
+        false
       end
       combination += 1
     end

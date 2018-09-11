@@ -53,4 +53,14 @@ end
 
 def winner(board)
   if won?(board) == true
+    combination = 0
+  while combination < WIN_COMBINATIONS.length
+    current_combination = WIN_COMBINATIONS[combination]
+    xwin = current_combination.all? {|position| board[position] == "X"}
+    owin = current_combination.all? {|position| board[position] == "O"}
+    if xwin == true || owin == true
+      return current_combination
+    end
+    combination += 1
+  end
     

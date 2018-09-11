@@ -22,7 +22,11 @@ def won?(board)
   while combination < WIN_COMBINATIONS.length
     current_combination = WIN_COMBINATIONS[combination]
     if current_combination.all? {|position| position == "X" || position == "O"} == true
-      true
+      return combination
+    end
+    combination += 1
+  end
+end
     
     
   

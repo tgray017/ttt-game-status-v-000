@@ -51,6 +51,7 @@ def over?(board)
   end
 end
 
+
 def winner(board)
   if won?(board) == true
     combination = 0
@@ -58,9 +59,10 @@ def winner(board)
       current_combination = WIN_COMBINATIONS[combination]
       xwin = current_combination.all? {|position| board[position] == "X"}
       owin = current_combination.all? {|position| board[position] == "O"}
-      if xwin == true || owin == true
-        return current_combination
-        
+      if xwin == true
+        return "X"
+      elsif  
+
       end
       combination += 1
     end

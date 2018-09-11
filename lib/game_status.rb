@@ -30,7 +30,6 @@ def won?(board)
     end
     combination += 1
   end
-  return false
 end
   
 

@@ -20,7 +20,8 @@ WIN_COMBINATIONS = [
 def won?(board)
   combination = 0
   while combination < WIN_COMBINATIONS.length
-    
+    current_combination = WIN_COMBINATIONS[combination]
+    current_combination.all? {|
     
   
   
